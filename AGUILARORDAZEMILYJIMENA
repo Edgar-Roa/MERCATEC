@@ -1,0 +1,26 @@
+SOFTWARE: Es un programa que nos ayuda a resolver desde problemas basicos hasta complejos 
+
+METODOLOGÍA DE CASCADA: Es un proceso en donde se tienen que cumplir las fases anteriores para que esta se lleve a cabo 
+
+METODOLOGÍA SCRUM: Es una metodología ágil que trabaja en ciclos cortos para lograr tareas rapidas y eficientes
+
+PDIPDM: Es un sistema que se encarga de gestionar los datos del producto 
+Planificación= es la reunion que se tiene con el cliente para saber que necesidades son las que se tienen que cubrir 
+Diseño= la creación de bocetos o diagramas 
+Implementación= se ejecutan las ideas y se ponen en marcha los bocetos 
+Pruebas= se pone en mano de los tester para identificar fallas
+Despliegue= se sube al servidor para que sea utlizado por los clientes 
+Mantenimiento= se le da seguimiento y se arreglan los posibles errores, incluso se puede modificar al gusto del cliente 
+
+Proyect Manager: es como el lider y se encarga de ir gestionando el proyeto y que se cumpla con lo que pidio el cliente 
+
+Scrum Master: Es la persona que va guiando al equipo scrum en la implementación de las metodologías ágiles 
+
+UX Designer: Es el diseñor enfocado en mejorar la interfaz que vera el usuario en su producto 
+
+Tester: Personal profesional que verifica el software para identificar fallos o problemas 
+
+Product Owner: Es el encargado de definir y priorizar las caracteristicas necesarias en el producto
+
+Analista de Negocios: se encarga de repartir el presuepuesto y es el enlace entre el equipo tecnico y las demandas del negocio 
+
