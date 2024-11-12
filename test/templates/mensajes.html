@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <style>                                                                                                                                      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f2ff;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .conversation-list {
+            width: 300px;
+            background-color: #b3d9ff;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .conversation-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #cce6ff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .conversation-item:hover {
+            background-color: #99ccff;
+        }
+        .message-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+        .message-header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+        }
+        .message-list {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .message {
+            max-width: 70%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .message.sent {
+            background-color: #cce6ff;
+            align-self: flex-end;
+            margin-left: auto;
+        }
+        .message.received {
+            background-color: #e6e6e6;
+            align-self: flex-start;
+        }
+        .message-input {
+            display: flex;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        .message-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #b3d9ff;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .message-input button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .message-input button:hover {
+            background-color: #3a7bc8;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .conversation-list {
+                width: 100%;
+                height: 30vh;
+            }
+            .message-area {
+                height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="conversation-list">
+            <div class="conversation-item">
+                <h3>Juan Pérez</h3>
+                <p>Último mensaje recibido...</p>
+            </div>
+            <div class="conversation-item">
+                <h3>María García</h3>
+                <p>Último mensaje recibido...</p>
+            </div>
+            <div class="conversation-item">
+                <h3>Carlos Rodríguez</h3>
+                <p>Último mensaje recibido...</p>
+            </div>
+            <!-- Más conversaciones se agregarían aquí -->
+        </aside>
+        <main class="message-area">
+            <header class="message-header">
+                <h2>Chat con Juan Pérez</h2>
+            </header>
+            <section class="message-list">
+                <div class="message received">
+                    <p>Hola, ¿cómo estás?</p>
+                </div>
+                <div class="message sent">
+                    <p>¡Hola! Estoy bien, gracias. ¿Y tú?</p>
+                </div>
+                <div class="message received">
+                    <p>Todo bien por aquí. ¿Tienes un momento para hablar sobre el proyecto?</p>
+                </div>
+                <!-- Más mensajes se agregarían aquí -->
+            </section>
+            <form class="message-input">
+                <input type="text" placeholder="Escribe tu mensaje..." aria-label="Escribe tu mensaje">
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
